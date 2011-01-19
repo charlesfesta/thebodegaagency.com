@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    <head profile="http://gmpg.org/xfn/11">
+    <title>The Bodega Agency</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+    <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="js/effects.core.js"></script>
+    <script src="js/effects.slide.js"></script>
+    
+    <script type="text/javascript" src="js/supersized.3.0.js"></script>
+    <script type="text/javascript">  
+        $(function(){
+            $.fn.supersized.options = {  
+                startwidth: 640,  
+                startheight: 480,
+                vertical_center: 1,
+                slideshow: 1,
+                navigation: 0,
+                thumbnail_navigation: 0,
+                transition: 1, //0-None, 1-Fade, 2-slide top, 3-slide right, 4-slide bottom, 5-slide left
+                pause_hover: 0,
+                slide_counter: 0,
+                slide_captions: 1,
+                slide_interval: 3000,
+                slides : [
+                    {image : 'slides/4.jpg', title : 'philly market', url : 'http://www.flickr.com/photos/charlesfesta/2066249709/in/photostream/'},  
+                    {image : 'slides/2.jpg', title : 'Oak Forest, Oct 26, 2008', url : 'http://www.flickr.com/photos/charlesfesta/2975696493/in/photostream/'},  
+                    {image : 'slides/3.jpg', title : 'Saucy Jack', url : 'http://www.flickr.com/photos/charlesfesta/2335779346/in/photostream/'},  
+                    {image : 'slides/1.jpg', title : 'Inwood, Apr 9, 2009', url : 'http://www.flickr.com/photos/charlesfesta/1031759265/in/photostream/'},
+                    {image : 'slides/5.jpg', title : 'Oak Forest, Oct 26, 2008', url : 'http://www.flickr.com/photos/charlesfesta/2975696493/in/photostream/'},  
+                ]
+            };
+            $('#supersized').supersized(); 
+        });
+    </script>
+    
+
+    <style type="text/css">
+    
+        #csontent{ background-color:rgba(0,0,0,0.65); width:720px;  margin:30px auto; text-align:left; }
+        #content {
+             background-color:rgba(0,0,0,0.65);
+             bottom: 0px;
+             margin:30px;
+             position: absolute;
+
+        }
+            
+        /*Demo Styles*/
+        h1{ padding:30px 30px 20px 30px; }
+        p{ padding:0 30px 30px 30px; color:#fff; font:13pt 'Molengo', "Helvetica Neue", "Helvetica", Arial, sans-serif; text-shadow: #000 0px 2px 0px; line-height:160%; }
+        h1 { font-family: 'Molengo', arial, serif; color: #fff; }
+        
+    </style>
+    </head>
+
+    <body>
+    
+    <!--Loading display while images load-->
+    <div id="loading">&nbsp;</div>
+    
+    <!--Content Area-->
+    <div id="content-wrapper">
+        <div id="content">
+            <h1>The Bodega Agency</h1>
+            <p><a href="mailto:info@thebodegaagency.com">info@thebodegaagency.com</a></p>
+        </div>
+    </div>
+    <!--Slides-->
+    <div id="supersized"></div>
+
+</body>
+</html>
+
